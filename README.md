@@ -35,7 +35,7 @@ Configurer SMTP_HOST, SMTP_PORT, SMTP_SECURE, SMTP_USER, SMTP_PASSWORD et SMTP_F
 
 ## Maquettes
 
-Fichier de référence :https://www.figma.com/design/iHlV45tEcg547AfAIDVwP5/Trouve-ton-artisan
+Fichier de référence : https://www.figma.com/design/aLEK2PR87VNLpFY1KOIhYz
 Trois points de départ et 189 interactions pour les écrans existants ; consulter docs/figma-enchainements.md.
 
 ## Dépôt du projet
@@ -49,3 +49,11 @@ Le script public database/seed.sql utilise 17 noms et adresses de démonstration
 ## Test du formulaire sur un site de démonstration
 
 Définir CONTACT_TEST_TO sur une boîte contrôlée permet de recevoir les essais sans contacter les artisans. Le destinataire est configuré exclusivement côté serveur. Le message de confirmation indique alors que le message de démonstration a été transmis à la boîte du projet. Laisser cette variable vide pour utiliser les destinataires de la base.
+
+## Accès au site
+
+https://trouve-artisan.alwaysdata.net/
+
+Le site utilise Node.js 24 et MariaDB 11.8. Les 15 tests passent sur l’hébergement. Le formulaire a été testé le 23 octobre 2026 vers la boîte contrôlée du projet ; l’historique SMTP confirme l’état Envoyé. Le jeu public reste fictif ; les données pédagogiques initiales sont conservées uniquement dans le livrable ZIP local.
+
+Le dossier de présentation est disponible dans docs/Dossier-Trouve-ton-artisan-pixelle2611.pdf. La nouvelle validation W3C complète et la revue au lecteur d’écran restent à prévoir.

@@ -35,7 +35,7 @@ Configurer SMTP_HOST, SMTP_PORT, SMTP_SECURE, SMTP_USER, SMTP_PASSWORD et SMTP_F
 
 ## Maquettes
 
-Fichier de référence : https://www.figma.com/design/aLEK2PR87VNLpFY1KOIhYz
+Fichier de référence :https://www.figma.com/design/iHlV45tEcg547AfAIDVwP5/Trouve-ton-artisan
 Trois points de départ et 189 interactions pour les écrans existants ; consulter docs/figma-enchainements.md.
 
 ## Dépôt du projet

@@ -74,7 +74,7 @@ router.post("/artisans/:id/contact", async (req, res) => {
   // Le destinataire est lu en base, il ne peut pas être choisi par le visiteur.
   await mailer.sendMail({
     from: process.env.SMTP_FROM,
-    to: artisan.email,
+    to: process.env.CONTACT_TEST_TO || artisan.email,
     replyTo: req.body.email.trim(),
     subject: req.body.subject.trim(),
     text:
@@ -86,7 +86,9 @@ router.post("/artisans/:id/contact", async (req, res) => {
       req.body.message.trim(),
   });
   res.json({
-    message: "Votre message a été envoyé. Une réponse sera apportée sous 48h.",
+    message: process.env.CONTACT_TEST_TO
+      ? "Votre message de démonstration a été envoyé à la boîte du projet."
+      : "Votre message a été envoyé. Une réponse sera apportée sous 48h.",
   });
 });
 router.use((req, res) =>

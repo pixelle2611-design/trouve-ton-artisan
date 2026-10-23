@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-23",
+  "site": "https://trouve-artisan.alwaysdata.net/",
+  "node": "24",
+  "database": "MariaDB 11.8",
+  "rows": {
+    "categories": 4,
+    "specialties": 15,
+    "cities": 14,
+    "artisans": 17
+  },
+  "sql_permissions": "lecture seule",
+  "tests": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "sql_mocked": true
+  },
+  "live_api": {
+    "categories": 200,
+    "artisans": 200,
+    "detail": 200,
+    "missing_artisan": 404,
+    "missing_api_route": 404,
+    "incomplete_contact": 400
+  },
+  "smtp": {
+    "tls_authentication": "OK",
+    "form_confirmation": "message de démonstration envoyé",
+    "provider_status": "Envoyé",
+    "provider_time": "2026-10-23 16:48 Europe/Paris",
+    "recipient": "trouve-artisan@alwaysdata.net",
+    "inbox_opened": false
+  },
+  "public_data": "noms et coordonnées fictifs",
+  "build": "compilé localement puis transféré, compilation distante interrompue par limite de ressources",
+  "remaining_checks": [
+    "validation W3C HTML/CSS complète",
+    "revue au lecteur d’écran"
+  ]
+}

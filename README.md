@@ -45,3 +45,7 @@ https://github.com/pixelle2611-design/trouve-ton-artisan
 ## Données de démonstration
 
 Le script public database/seed.sql utilise 17 noms et adresses de démonstration sur example.com ; les sites web sont laissés vides. Les villes, catégories, spécialités et relations sont conservées. Ces coordonnées ne permettent pas de contacter les artisans du jeu pédagogique initial. Pour l’évaluation avec les données fournies par la formation, utiliser le script du livrable local uniquement dans un environnement autorisé.
+
+## Test du formulaire sur un site de démonstration
+
+Définir CONTACT_TEST_TO sur une boîte contrôlée permet de recevoir les essais sans contacter les artisans. Le destinataire est configuré exclusivement côté serveur. Le message de confirmation indique alors que le message de démonstration a été transmis à la boîte du projet. Laisser cette variable vide pour utiliser les destinataires de la base.
